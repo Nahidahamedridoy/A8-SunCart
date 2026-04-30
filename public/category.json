@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "name": "Accessories",
+    "slug": "accessories",
+    "description": "Essential summer accessories to enhance your style and comfort."
+  },
+  {
+    "id": 2,
+    "name": "Electronics",
+    "slug": "electronics",
+    "description": "Portable gadgets to keep you cool and connected during summer."
+  },
+  {
+    "id": 3,
+    "name": "Footwear",
+    "slug": "footwear",
+    "description": "Lightweight and comfortable footwear for beach and casual outings."
+  },
+  {
+    "id": 4,
+    "name": "Lifestyle",
+    "slug": "lifestyle",
+    "description": "Daily-use items designed for convenience and hydration in hot weather."
+  },
+  {
+    "id": 5,
+    "name": "Skincare",
+    "slug": "skincare",
+    "description": "Protect and nourish your skin from sun damage and heat."
+  },
+  {
+    "id": 6,
+    "name": "Travel",
+    "slug": "travel",
+    "description": "Travel-friendly items perfect for summer trips and outdoor adventures."
+  },
+  {
+    "id": 7,
+    "name": "Bags",
+    "slug": "bags",
+    "description": "Stylish and spacious bags for carrying your summer essentials."
+  }
+]
