@@ -15,7 +15,7 @@ const Navbar = () => {
                         height={30}
                         className="object-cover h-auto w-auto"
                     />
-                    <h3 className="font-black text-lg">pixgen.</h3>
+                    <h3 className="font-black text-lg">SummerCart</h3>
                 </div>
 
                 <ul className="flex items-center gap-5 text-sm">
@@ -23,13 +23,10 @@ const Navbar = () => {
                         <Link href={"/"}>Home</Link>
                     </li>
                     <li>
-                        <Link href={"/all-photos"}>All Photos</Link>
+                        <Link href={"/all-photos"}>Products</Link>
                     </li>
                     <li>
-                        <Link href={"/pricing"}>Pricing</Link>
-                    </li>
-                    <li>
-                        <Link href={"/profile"}>Profile</Link>
+                        <Link href={"/profile"}>My Profile</Link>
                     </li>
                 </ul>
 
