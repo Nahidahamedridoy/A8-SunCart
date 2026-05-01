@@ -7,7 +7,7 @@
         "rating": 4.7,
         "stock": 10,
         "description": "Stylish UV protection sunglasses perfect for summer outings.",
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgwDiRj0P2BBd7Tk3vvLCOqyMMjqHBzuQ31g&s",
+        "image": "https://i.pinimg.com/736x/5d/2f/5a/5d2f5ae6151dabdff4bddbea8953fef0.jpg",
         "category": "Accessories"
     },
     {
@@ -18,7 +18,7 @@
         "rating": 4.5,
         "stock": 20,
         "description": "Lightweight straw hat to keep you cool under the sun.",
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ45Y_4fiK1fC1udyQt34XykvWshl8O9hpfnkaJpfYx8AkA2uie3NZvy6c&s",
+        "image": "https://i.pinimg.com/1200x/45/32/f5/4532f53f477c8ae9982195d5897cf2ef.jpg",
         "category": "Accessories"
     },
     {
@@ -29,7 +29,7 @@
         "rating": 4.6,
         "stock": 15,
         "description": "Rechargeable mini fan ideal for hot summer days.",
-        "image": "https://source.unsplash.com/400x400/?mini-fan",
+        "image": "https://i.pinimg.com/736x/ba/d7/24/bad72426247f83fa102d5213ea95a9f7.jpg",
         "category": "Electronics"
     },
     {
@@ -40,7 +40,7 @@
         "rating": 4.3,
         "stock": 25,
         "description": "Comfortable flip flops perfect for beach and casual wear.",
-        "image": "https://source.unsplash.com/400x400/?flip-flops",
+        "image": "https://i.pinimg.com/736x/d8/69/0d/d8690d19a8129e9f802fb15b9787123b.jpg",
         "category": "Footwear"
     },
     {
@@ -51,7 +51,7 @@
         "rating": 4.8,
         "stock": 18,
         "description": "Keeps your drinks cold for hours during summer heat.",
-        "image": "https://source.unsplash.com/400x400/?water-bottle",
+        "image": "https://i.pinimg.com/736x/02/cd/5a/02cd5ac911cd6d72d00c4da30e7697ca.jpg",
         "category": "Lifestyle"
     },
     {
@@ -62,7 +62,7 @@
         "rating": 4.9,
         "stock": 30,
         "description": "High protection sunscreen to prevent sunburn and skin damage.",
-        "image": "https://source.unsplash.com/400x400/?sunscreen",
+        "image": "https://i.pinimg.com/736x/1d/93/67/1d9367247d676cc3c16c8f390e1faaef.jpg",
         "category": "Skincare"
     },
     {
@@ -73,7 +73,7 @@
         "rating": 4.4,
         "stock": 22,
         "description": "Quick-dry cooling towel for instant refresh in hot weather.",
-        "image": "https://source.unsplash.com/400x400/?cooling-towel",
+        "image": "https://i.pinimg.com/1200x/07/9c/d4/079cd4c879f4ac6661f042329405f8ec.jpg",
         "category": "Travel"
     },
     {
@@ -84,7 +84,7 @@
         "rating": 4.6,
         "stock": 12,
         "description": "Spacious and stylish beach bag for all your summer essentials.",
-        "image": "https://source.unsplash.com/400x400/?beach-bag",
+        "image": "https://i.pinimg.com/736x/c4/ce/fe/c4cefe5fd869597ff194e9f8bb28f750.jpg",
         "category": "Bags"
     }
 ]

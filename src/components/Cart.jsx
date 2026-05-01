@@ -1,5 +1,6 @@
 import { Button, Card, Chip } from '@heroui/react';
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
 import { FaDollarSign } from 'react-icons/fa';
 import { GoStarFill } from 'react-icons/go';
@@ -36,7 +37,9 @@ const Cart = ({ cart }) => {
                 </div>
             </div>
 
-            <Button variant='outline' className="w-full mt-4 my-4">View Details</Button>
+            <Link href={`all-carts/${cart.id}`}>
+                <Button variant='outline' className="w-full mt-4 my-4">View Details</Button>
+            </Link>
 
         </Card>
     );
