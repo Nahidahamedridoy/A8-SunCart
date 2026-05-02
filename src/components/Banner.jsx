@@ -1,5 +1,6 @@
 'use client';
 import { Button } from "@heroui/react";
+import Image from "next/image";
 
 const Banner = () => {
   return (
@@ -30,9 +31,11 @@ const Banner = () => {
 
         {/* Right Image */}
         <div className="flex justify-center">
-          <img
-            src="https://i.postimg.cc/3x3QzSGq/summer-banner.png"
+          <Image
+            src="https://i.pinimg.com/736x/66/c8/bf/66c8bfbbfd5e43471be665e7978de88e.jpg"
             alt="Summer Banner"
+            width={400}
+            height={400}
             className="w-full max-w-md rounded-xl shadow-lg"
           />
         </div>
