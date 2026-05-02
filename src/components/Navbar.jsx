@@ -8,12 +8,12 @@ const Navbar = () => {
             <nav className=" flex justify-between items-center  py-3 max-w-7xl mx-auto w-full">
                 <div className="flex gap-2 items-center">
                     <Image
-                        src={"/logo.png"}
+                        src={"/SummerSale.jpg"}
                         alt="logo"
                         loading="eager"
-                        width={30}
-                        height={30}
-                        className="object-cover h-auto w-auto"
+                        width={70}
+                        height={70}
+                        className="object-cover h-auto w-auto bg-white"
                     />
                     <h3 className="font-black text-lg">SummerCart</h3>
                 </div>

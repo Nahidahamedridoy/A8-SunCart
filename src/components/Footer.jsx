@@ -1,159 +1,65 @@
+'use client';
+
 import Link from "next/link";
-import Image from "next/image";
+import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
 
 const Footer = () => {
-    return (
-        <footer className="relative mt-24">
-            <div className="mt-12 h-px w-full bg-linear-to-r from-transparent via-gray-300 to-transparent dark:via-white/10" />
+  return (
+    <footer className="bg-gray-900 text-gray-300 mt-10">
+      <div className="max-w-7xl mx-auto px-5 py-10 grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        {/* Logo & Description */}
+        <div>
+          <h2 className="text-2xl font-bold text-white">SunCart ☀️</h2>
+          <p className="mt-3 text-sm">
+            Your one-stop summer essentials store. Discover trendy outfits,
+            sunglasses, skincare & more.
+          </p>
+        </div>
 
-            {/* Background Layer */}
-            <div className="absolute inset-0 -z-10 bg-white dark:bg-[#0a0a0b]" />
+        {/* Links */}
+        <div>
+          <h3 className="text-lg font-semibold text-white mb-3">Quick Links</h3>
+          <ul className="space-y-2">
+            <li>
+              <Link href="/" className="hover:text-orange-400">Home</Link>
+            </li>
+            <li>
+              <Link href="/products" className="hover:text-orange-400">Products</Link>
+            </li>
+            <li>
+              <Link href="/my-profile" className="hover:text-orange-400">My Profile</Link>
+            </li>
+          </ul>
+        </div>
 
-            {/* Subtle Gradient Glow */}
-            <div
-                className="absolute inset-0 -z-10 bg-linear-to-tr 
-        from-purple-500/5 via-transparent to-blue-500/5 
-        dark:from-purple-500/10 dark:to-blue-500/10 blur-3xl"
-            />
+        {/* Contact & Social */}
+        <div>
+          <h3 className="text-lg font-semibold text-white mb-3">Contact</h3>
+          <p className="text-sm">Email: support@suncart.com</p>
+          <p className="text-sm">Phone: +880 1234-567890</p>
 
-            {/* Content */}
-            <div className="max-w-7xl mx-auto px-6 py-16">
-                {/* Top Grid */}
-                <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
-                    {/* Brand */}
-                    <div className="space-y-4">
-                        <div className="flex items-center gap-2">
-                            <Image
-                                src="/logo.png"
-                                alt="pixgen logo"
-                                width={32}
-                                height={32}
-                                className="dark:brightness-200"
-                            />
-                            <h2 className="text-xl font-semibold tracking-tight text-black dark:text-white">
-                                SunCart
-                            </h2>
-                        </div>
+          <div className="flex gap-4 mt-4 text-xl">
+            <a href="#" className="hover:text-orange-400">
+              <FaFacebook />
+            </a>
+            <a href="#" className="hover:text-orange-400">
+              <FaGithub />
+            </a>
+            <a href="#" className="hover:text-orange-400">
+              <FaLinkedin />
+            </a>
+          </div>
+        </div>
 
-                        <p className="text-sm leading-relaxed text-gray-600 dark:text-gray-400 max-w-xs">
-                            Create production-ready AI visuals in seconds. Built for speed,
-                            scale, and creativity.
-                        </p>
-                    </div>
+      </div>
 
-                    {/* Product */}
-                    <div>
-                        <h3 className="text-sm font-semibold text-black dark:text-white mb-4">
-                            Product
-                        </h3>
-                        <ul className="space-y-3 text-sm text-gray-600 dark:text-gray-400">
-                            <li>
-                                <Link
-                                    href="/generate"
-                                    className="hover:text-black dark:hover:text-white transition"
-                                >
-                                    Generate
-                                </Link>
-                            </li>
-                            <li>
-                                <Link
-                                    href="/all-photos"
-                                    className="hover:text-black dark:hover:text-white transition"
-                                >
-                                    Gallery
-                                </Link>
-                            </li>
-                            <li>
-                                <Link
-                                    href="/pricing"
-                                    className="hover:text-black dark:hover:text-white transition"
-                                >
-                                    Pricing
-                                </Link>
-                            </li>
-                        </ul>
-                    </div>
-
-                    {/* Company */}
-                    <div>
-                        <h3 className="text-sm font-semibold text-black dark:text-white mb-4">
-                            Company
-                        </h3>
-                        <ul className="space-y-3 text-sm text-gray-600 dark:text-gray-400">
-                            <li>
-                                <Link
-                                    href="/about"
-                                    className="hover:text-black dark:hover:text-white transition"
-                                >
-                                    About
-                                </Link>
-                            </li>
-                            <li>
-                                <Link
-                                    href="/contact"
-                                    className="hover:text-black dark:hover:text-white transition"
-                                >
-                                    Contact
-                                </Link>
-                            </li>
-                            <li>
-                                <Link
-                                    href="/terms"
-                                    className="hover:text-black dark:hover:text-white transition"
-                                >
-                                    Terms
-                                </Link>
-                            </li>
-                        </ul>
-                    </div>
-
-                    {/* CTA Block */}
-                    <div className="space-y-4">
-                        <h3 className="text-sm font-semibold text-black dark:text-white">
-                            Start creating
-                        </h3>
-
-                        <p className="text-sm text-gray-600 dark:text-gray-400">
-                            Generate your first AI image today.
-                        </p>
-
-                        <Link
-                            href="/signup"
-                            className="inline-flex items-center justify-center px-5 py-2.5 rounded-full 
-              bg-black text-white dark:bg-white dark:text-black 
-              text-sm font-medium transition-all duration-200 
-              hover:scale-[1.02] hover:shadow-lg hover:shadow-black/10 dark:hover:shadow-white/10"
-                        >
-                            Get Started
-                        </Link>
-                    </div>
-                </div>
-
-                {/* Divider */}
-                <div className="mt-12 h-px w-full bg-linear-to-r from-transparent via-gray-300 to-transparent dark:via-white/10" />
-
-                {/* Bottom */}
-                <div className="mt-6 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-500 dark:text-gray-400">
-                    <p>© {new Date().getFullYear()} pixgen. All rights reserved.</p>
-
-                    <div className="flex items-center gap-6">
-                        <Link
-                            href="/privacy"
-                            className="hover:text-black dark:hover:text-white transition"
-                        >
-                            Privacy
-                        </Link>
-                        <Link
-                            href="/terms"
-                            className="hover:text-black dark:hover:text-white transition"
-                        >
-                            Terms
-                        </Link>
-                    </div>
-                </div>
-            </div>
-        </footer>
-    );
+      {/* Bottom */}
+      <div className="border-t border-gray-700 text-center py-4 text-sm">
+        © {new Date().getFullYear()} SunCart. All rights reserved.
+      </div>
+    </footer>
+  );
 };
 
 export default Footer;
