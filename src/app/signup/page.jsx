@@ -12,11 +12,11 @@ import {
     TextField,
 } from "@heroui/react";
 
-// import { useRouter } from "next/router";
+import { useRouter } from "next/router";
 
 export default function SignUpPage() {
 
-    // const router = useRouter();
+    const router = useRouter();
 
     const onSubmit = async (e) => {
         e.preventDefault();
@@ -36,9 +36,9 @@ export default function SignUpPage() {
         })
         console.log({ data, error });
 
-        // if (!error) {
-        //     router.push('/')
-        // }
+        if (!error) {
+            router.push('/')
+        }
 
     };
 
