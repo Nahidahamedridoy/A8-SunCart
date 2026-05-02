@@ -2,7 +2,7 @@ import Cart from '@/components/Cart';
 import React from 'react';
 
 const AllProductsCart = async () => {
-    const res = await fetch('http://localhost:3000/data.json');
+    const res = await fetch('https://a8-sun-cart.vercel.app/data.json');
     const carts = await res.json();
     console.log(carts);
     return (
