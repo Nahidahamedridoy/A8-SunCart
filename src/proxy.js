@@ -1,14 +1,23 @@
 import { NextResponse } from 'next/server'
+import { auth } from './lib/auth'
+import { headers } from 'next/headers'
 
 // This function can be marked `async` if using `await` inside
-export function proxy(request) {
+export async function proxy(request) {
 
-    console.log("massage from proxy!");
+    // console.log("massage from proxy!");
+    const session = await auth.api.getSession({
+        headers: await headers()
+    })
 
-    return NextResponse.redirect(new URL('/home', request.url))
+    if (!session) {
+        return NextResponse.redirect(new URL('/signin', request.url))
+    }
+
+
 }
 
 
 export const config = {
-    matcher: ['/My-Profile'],
+    matcher: ['/My-Profile' , "/all-carts/:path"],
 }
