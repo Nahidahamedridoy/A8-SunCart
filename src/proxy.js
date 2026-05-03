@@ -14,10 +14,9 @@ export async function proxy(request) {
         return NextResponse.redirect(new URL('/signin', request.url))
     }
 
-
 }
 
 
 export const config = {
-    matcher: ['/My-Profile' , "/all-carts/:path"],
+    matcher: ['/profile' , "/all-carts/:path"],
 }
