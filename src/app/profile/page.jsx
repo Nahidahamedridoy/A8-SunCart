@@ -3,13 +3,13 @@
 import { UpdateUserData } from "@/components/UpdateUserData";
 import { authClient } from "@/lib/auth-client";
 import { Avatar, Card } from "@heroui/react";
+import { redirect } from "next/navigation";
 
 const ProfilePage = () => {
 
     const userData = authClient.useSession()
     const user = userData.data?.user
-    console.log(user);
-
+    // console.log(user);
 
     return (
         <div >
@@ -25,7 +25,7 @@ const ProfilePage = () => {
                 <h2 className="text-xl font-bold">{user?.name}</h2>
                 <p>{user?.email}</p>
 
-                <UpdateUserData/>
+                <UpdateUserData />
             </Card>
         </div>
     );

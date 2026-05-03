@@ -16,7 +16,8 @@ export function UpdateUserData() {
         await authClient.updateUser({
             name,
             image,
-        })
+        });
+        
     }
 
     return (
