@@ -110,11 +110,7 @@ GOOGLE_CLIENT_SECRET=your_google_client_secret
 
 ---
 
-## ⚙️ Installation & Setup
 
-```bash
-# Clone the repository
-git clone https://github.com/your-username/suncart.git
 
 # Navigate to project folder
 cd suncart
@@ -136,7 +132,6 @@ npm run dev
 * daisyui
 * better-auth
 * react-icons
-* lottie-react (optional)
 
 ---
 
@@ -166,7 +161,7 @@ npm run dev
 ## 👨‍💻 Author
 
 Name: Ridoy Ahamed
-GitHub: https://github.com/your-username
+GitHub: https://github.com/Nahidahamedridoy/A8-SunCart
 
 ---
 

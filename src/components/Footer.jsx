@@ -36,7 +36,7 @@ const Footer = () => {
         {/* Contact & Social */}
         <div>
           <h3 className="text-lg font-semibold text-white mb-3">Contact</h3>
-          <p className="text-sm">Email: support@suncart.com</p>
+          <p className="text-sm">Email: nahidahamedridoy@gmail.com</p>
           <p className="text-sm">Phone: +880 1234-567890</p>
 
           <div className="flex gap-4 mt-4 text-xl">

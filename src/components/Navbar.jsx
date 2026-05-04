@@ -46,12 +46,12 @@ const Navbar = () => {
           </li>
         </ul>
 
-        {/* Right Side  */}
+        {/* Right Side Desktop */}
         <div className="hidden md:flex gap-4 items-center">
           {!user && (
             <>
-              <Link href="/signup">SignUp</Link>
-              <Link href="/signin">SignIn</Link>
+              <NavLink href="/signup">SignUp</NavLink>
+              <NavLink href="/signin">SignIn</NavLink>
             </>
           )}
 

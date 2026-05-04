@@ -23,18 +23,15 @@ export default function SignInPage() {
 
         // console.log({name, image, email, password});
 
-        const { data, error } = await authClient.signIn.email({
+        const { error } = await authClient.signIn.email({
             email,
             password,
             callbackURL: '/'
         })
-        console.log({ data, error });
+        // console.log({ data, error });
 
         if(error){
-            toast.error("haha")
-        }
-        if(data){
-            toast.success("sign in successful")
+            toast.error(error.message)
         }
 
     };
