@@ -20,10 +20,10 @@ export default function SignUpPage() {
 
     const router = useRouter();
 
-    const onSubmit = async  (e) => {
+    const onSubmit = async (e) => {
 
         e.preventDefault();
-       
+
         const name = e.target.name.value;
         const image = e.target.image.value;
         const email = e.target.email.value;
@@ -44,11 +44,13 @@ export default function SignUpPage() {
         }
         if (data) {
             toast.success("sign in successful")
+
+            await authClient.signOut();
+
+            router.push('/signin');
         }
 
-        if (!error) {
-            router.push('/signin')
-        }
+
 
     };
 
