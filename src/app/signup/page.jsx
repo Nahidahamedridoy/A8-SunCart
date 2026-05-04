@@ -20,9 +20,10 @@ export default function SignUpPage() {
 
     const router = useRouter();
 
-    const onSubmit = async (e) => {
-        e.preventDefault();
+    const onSubmit = async  (e) => {
 
+        e.preventDefault();
+       
         const name = e.target.name.value;
         const image = e.target.image.value;
         const email = e.target.email.value;
@@ -46,7 +47,7 @@ export default function SignUpPage() {
         }
 
         if (!error) {
-            router.push('/')
+            router.push('/signin')
         }
 
     };

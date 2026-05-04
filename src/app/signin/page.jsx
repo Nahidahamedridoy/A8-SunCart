@@ -31,7 +31,7 @@ export default function SignInPage() {
         console.log({ data, error });
 
         if(error){
-            toast.error(error.message)
+            toast.error("haha")
         }
         if(data){
             toast.success("sign in successful")
