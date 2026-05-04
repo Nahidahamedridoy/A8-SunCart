@@ -1,48 +1,43 @@
-'use client';
-import { Button } from "@heroui/react";
+"use client";
 import Image from "next/image";
+import Link from "next/link";
 
-const Banner = () => {
+export default function Banner() {
   return (
-    <div className="w-full bg-gradient-to-r from-orange-100 via-yellow-100 to-pink-100 py-16">
-      <div className="max-w-7xl mx-auto px-5 grid grid-cols-1 md:grid-cols-2 items-center gap-10">
-        
+    <section className="bg-gradient-to-r from-orange-100 to-yellow-50 py-16 px-6 md:px-16 mt-5">
+      <div className="grid md:grid-cols-2 items-center gap-10">
+
         {/* Left Content */}
         <div>
-          <h1 className="text-4xl md:text-6xl font-bold leading-tight">
-            Summer Sale ☀️ <br />
-            <span className="text-orange-500">Up to 50% OFF</span>
+          <h1 className="text-4xl md:text-6xl font-bold text-gray-800 animate__animated animate__fadeInDown">
+            Summer Sale 🔥
           </h1>
 
-          <p className="mt-4 text-gray-600 text-lg">
-            Discover the hottest summer essentials – sunglasses, outfits,
-            skincare & more. Stay cool and stylish this season!
+          <p className="mt-4 text-gray-600 text-lg animate__animated animate__fadeInLeft animate__delay-1s">
+            Up to 50% off on all summer collections. Grab your favorite products now!
           </p>
 
-          <div className="mt-6 flex gap-4">
-            <Button color="warning" variant="solid">
-              Shop Now
-            </Button>
-            <Button variant="bordered">
-              Explore
-            </Button>
-          </div>
+          <Link href={"/all-carts"}> 
+          <button className="mt-6 px-6 py-3 bg-orange-500 text-white rounded-xl shadow-lg hover:bg-orange-600 animate__animated animate__pulse animate__infinite">
+            Shop Now
+          </button>
+          </Link>
         </div>
 
         {/* Right Image */}
         <div className="flex justify-center">
-          <Image
-            src="https://i.pinimg.com/736x/66/c8/bf/66c8bfbbfd5e43471be665e7978de88e.jpg"
-            alt="Summer Banner"
-            width={400}
-            height={400}
-            className="w-full max-w-md rounded-xl shadow-lg"
-          />
+          <div className="animate__animated animate__zoomIn animate__delay-1s">
+            <Image
+              src="https://i.pinimg.com/736x/84/2e/de/842ede27e0139d52d769a714d44ec2bc.jpg"
+              alt="Summer Banner"
+              width={400}
+              height={400}
+              className="rounded-2xl"
+            />
+          </div>
         </div>
 
       </div>
-    </div>
+    </section>
   );
-};
-
-export default Banner;
+}

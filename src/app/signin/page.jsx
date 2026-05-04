@@ -11,7 +11,7 @@ import {
     Label,
     TextField,
 } from "@heroui/react";
-import { GrGoogle } from "react-icons/gr";
+import { FcGoogle } from "react-icons/fc";
 
 export default function SignInPage() {
     const onSubmit = async (e) => {
@@ -97,7 +97,7 @@ export default function SignInPage() {
                 </div>
             </Form>
             <p className="text-center">Or </p>
-            <Button onClick={handleGoogleSingIn} variant="outline" className={'w-full'}><GrGoogle /> Sign In With Google</Button>
+            <Button onClick={handleGoogleSingIn} variant="outline" className={'w-full'}><FcGoogle /> Sign In With Google</Button>
 
         </Card>
 
