@@ -37,6 +37,13 @@ export default function SignUpPage() {
         })
         console.log({ data, error });
 
+        if (error) {
+            toast.error(error.message)
+        }
+        if (data) {
+            toast.success("sign in successful")
+        }
+
         if (!error) {
             router.push('/')
         }

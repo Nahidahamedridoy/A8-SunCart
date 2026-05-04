@@ -12,6 +12,7 @@ import {
     TextField,
 } from "@heroui/react";
 import { FcGoogle } from "react-icons/fc";
+import { toast } from "react-toastify";
 
 export default function SignInPage() {
     const onSubmit = async (e) => {
@@ -28,6 +29,14 @@ export default function SignInPage() {
             callbackURL: '/'
         })
         console.log({ data, error });
+
+        if(error){
+            toast.error(error.message)
+        }
+        if(data){
+            toast.success("sign in successful")
+        }
+
     };
 
     const handleGoogleSingIn = async () => {
