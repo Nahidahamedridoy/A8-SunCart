@@ -20,7 +20,7 @@ The goal of this project is to practice:
 
 ## 🚀 Live URL
 
-👉 https://your-live-link.vercel.app
+👉 https://a8-sun-cart.vercel.app
 
 ---
 
